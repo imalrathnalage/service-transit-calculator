@@ -30,6 +30,8 @@ Details about processed trips.
 **How to Use the Sample File**
 Upload the File:
 
+Location: src/main/resources/trips.csv
+
 Start the application and use Postman or any REST client.
 Send a POST request to http://localhost:9090/transit/upload with the trips.csv file attached as file.
 Download Processed Results:
