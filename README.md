@@ -12,10 +12,13 @@ mvn spring-boot:run
 **API Endpoints**
 Upload CSV
 
-URL: POST /transit/upload
-Request: Form-data with a file named file.
-Response: A success message.
-Download CSV
+Endpoint: /transit/upload
+Method: POST
+Description: Upload a CSV file to process transit trips.
+Headers:
+Authorization: Bearer token (token1)
+Body:
+file: CSV file containing trip data.
 
 URL: GET /transit/download
 Response: A CSV file with processed trip data.
@@ -29,6 +32,8 @@ Details about processed trips.
 
 **How to Use the Sample File**
 Upload the File:
+
+Location: src/main/resources/trips.csv
 
 Start the application and use Postman or any REST client.
 Send a POST request to http://localhost:9090/transit/upload with the trips.csv file attached as file.
